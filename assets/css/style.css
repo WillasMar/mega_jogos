@@ -53,6 +53,8 @@ body{
 	padding-left: 12px;
 	padding-right: 12px;
 	color: #FFF;
+	margin-right: 2px;
+	font-size: 14px;
 }
 .topo .menu li:hover{
 	background-color: #fff;
@@ -79,8 +81,119 @@ body{
 	width: 40px;
 	height: 50px;
 	text-align: center;
-	line-height: 50px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.topo .loginSeta img{
+	width: 15px;
+}
+.topo .loginSeta .cima{
+	display: none;
+}
+.areaLogin{
+	width: 331px;
+	height: 396px;
+	background-color: #383933;
+	position: absolute;
+	right: 0;
+	top: 50px;
+    margin-right: 44px;
+    display: none;
+    z-index: 9999;
+}
+.areaLogin .areaLoginEmail{
+	width: 292px;
+	height: 234px;
+	color: #fff;
+	border-bottom: 1px solid #666;
+	margin: auto;
+}
+.areaLogin .arealoginSocial{
+	width: 292px;
+	height: 162px;
+	margin: auto;
+	border-top: 1px solid #000;
+}
+.areaLogin .areaLoginEmail .email{
+	padding-top: 24px;
+	padding-bottom: 5px;
+}
+.areaLogin .areaLoginEmail .emailC input{
+	width: 290px;
+	height: 33px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	font-size: 15px;
+}
+.areaLogin .areaLoginEmail .senha{
+	padding-bottom: 5px;
+}
+.areaLogin .areaLoginEmail .senhaC input{
+	width: 290px;
+	height: 33px;
+	border-radius: 5px;
+	margin-bottom: 14px;
+	font-size: 15px;
+}
+.areaLogin .areaLoginEmail .botao {
+	display: flex;
+}
+.areaLogin .areaLoginEmail .botao .btn{
+	width: 65px;
+	height: 30px;
+	background-color: #00BFE4;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 33px;
+	font-size: 15px;
+	border-bottom: 3px solid #00A1B9;
+}
+.areaLogin .areaLoginEmail .botao .btn:hover{
+	cursor: pointer;
+	background-color: #61CADE;
+}
+.areaLogin .areaLoginEmail .botao .btnSenha{
+	padding-left: 45px;
+	display: flex;
+	align-items: flex-end;
+}
+.areaLogin .areaLoginEmail .botao .btnSenha a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+}
+.areaLogin .arealoginSocial a{
+	text-decoration: none;
+}
+.areaLogin .arealoginSocial .social{
+	width: 292px;
+	height: 33px;
+	margin-top: 10px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	font-size: 12px;
+	display: flex;
+	align-items: center;
+	color: #fff;
+}
+.areaLogin .arealoginSocial .social p{
+	margin-left: 40px;	
+}
+.areaLogin .arealoginSocial .facebook{
+	background: url("../img/conecttofacebook.png");
+}
+.areaLogin .arealoginSocial .google{
+	background: url("../img/connecttogoogle.png");
+}
+.areaLogin .arealoginSocial .novo{
+	height: 38px;
+	margin-top: 14px;
+	background: url(../img/bg_cadastrese.png);
+	background-position: 0px -8px;
+}
+
+
 
 /* banner */
 
@@ -105,7 +218,7 @@ body{
 	padding-top: 100px;
 }
 .area2 .areaInt .areaBanner .bannersInt{
-	opacity: 0;
+	
 }
 .area2 .areaInt .areaBanner .banners .banner1{
 	font-size: 35px;

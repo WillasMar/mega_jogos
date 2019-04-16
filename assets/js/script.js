@@ -1,4 +1,27 @@
 $(function(){
+
+	$('.topo .menu li').bind('click',function(){
+		$('.topo .menu li').removeClass();
+		$(this).addClass('menuSelecionado');
+	});
+	
+	var ligado = 'on';
+	$('.topo .login').bind('click',function(){
+		if (ligado == 'on') {
+			ligado = 'off';
+			$('.topo .loginSeta .baixo').css('display','none');
+			$('.topo .loginSeta .cima').css('display','block');
+			$('.areaLogin').css('display','block');
+			$(this).css('background','#383933');
+		}else{
+			ligado = 'on';
+			$('.topo .loginSeta .baixo').css('display','block');
+			$('.topo .loginSeta .cima').css('display','none');
+			$('.areaLogin').css('display','none');
+			$(this).css('background','#1B86A5');
+		}
+	})
+
 	var area3Img;
 	var area3ImgN;
 	$('.area3 .corpo .lado1 .jogos .jogosInt .imagem').hover(function(){
@@ -17,6 +40,4 @@ $(function(){
 			$(area3ImgN).css('color','#fff');
 		}
 	);
-
-	$('.area2 .areaInt .areaBanner .banners .banner1').show('slow');
 });
